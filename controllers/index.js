@@ -41,9 +41,8 @@ function renderTableMonAn(arrDish) {
 }
 
 function xoaMonAn(maMonAn) {
-  for (var index = 0; index < arrMonAn.length; index++) {
+  for (var index = arrMonAn.length - 1; index >= 0 ; index--) {
     var monAn = arrMonAn[index];
-
     if (maMonAn === monAn.maMonAn) {
       arrMonAn.splice(index, 1);
     }
