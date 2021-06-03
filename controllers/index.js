@@ -9,9 +9,24 @@ document.querySelector("#themMonAn").onclick = function () {
   monAn.giaTien = document.querySelector("#giaTien").value;
   monAn.hinhAnh = document.querySelector("#hinhAnh").value;
 
+  // kiểm tra input
+
+  var kiemTra = new Validation ();
+
+  var valid = true;
+
+  valid &= kiemTra.kiemTraInput(monAn.maMonAn,'#inputError_maMonAn','Mã món ăn')
+  &kiemTra.kiemTraInput(monAn.giaTien,'#inputError_giaTien','Giá tiền')
+  &kiemTra.kiemTraInput(monAn.tenMonAn,'#inputError_tenMonAn','Tên món ăn')
+  &kiemTra.kiemTraInput(monAn.hinhAnh,'#inputError_linkHinhAnh','Link hình ảnh');
+
+  if(!valid) {
+    return;
+  }
+
   arrMonAn.push(monAn);
 
-  console.log(arrMonAn);
+  // console.log(arrMonAn);
 
   renderTableMonAn(arrMonAn);
 };
