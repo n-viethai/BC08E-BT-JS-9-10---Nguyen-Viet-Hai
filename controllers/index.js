@@ -77,7 +77,7 @@ var arrMenu = [
     tenMonAn: "Cua thịt khủng",
     soLuong: "0",
     giaTien: "1250",
-    tongTien() {
+    tongTien: function () {
       return this.soLuong * this.giaTien;
     },
     hinhAnh: "./assets/img/mon1.jpeg",
@@ -87,7 +87,7 @@ var arrMenu = [
     tenMonAn: "Cua thịt cỡ nhỏ",
     soLuong: "0",
     giaTien: "350",
-    tongTien() {
+    tongTien: function () {
       return this.soLuong * this.giaTien;
     },
     hinhAnh: "./assets/img/mon2.jpeg",
@@ -97,7 +97,7 @@ var arrMenu = [
     tenMonAn: "Combo cua-vẹm-tôm",
     soLuong: "0",
     giaTien: "610",
-    tongTien() {
+    tongTien : function () {
       return this.soLuong * this.giaTien;
     },
     hinhAnh: "./assets/img/mon3.jpeg",
@@ -107,7 +107,7 @@ var arrMenu = [
     tenMonAn: "Cua gạch",
     soLuong: "0",
     giaTien: "950",
-    tongTien() {
+    tongTien : function () {
       return this.soLuong * this.giaTien;
     },
     hinhAnh: "./assets/img/mon4.jpeg",
@@ -117,7 +117,7 @@ var arrMenu = [
     tenMonAn: "King crab",
     soLuong: "0",
     giaTien: "2950",
-    tongTien() {
+    tongTien : function () {
       return this.soLuong * this.giaTien;
     },
     hinhAnh: "./assets/img/mon5.jpeg",
