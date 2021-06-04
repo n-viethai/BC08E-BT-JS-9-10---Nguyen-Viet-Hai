@@ -66,6 +66,8 @@ function xoaMonAn(maMonAn) {
   renderTableMonAn(arrMonAn);
 }
 
+// -------------------------------------------------------------------------------------------------------------------
+
 //  bài tập 2
 
 var arrMenu = [
@@ -133,7 +135,7 @@ function renderMenuTable(arrMenu) {
       <td>${monAn.tenMonAn}</td>
       <td>${monAn.giaTien}</td>
       <td>
-          <img src="${monAn.hinhAnh}" style="width: 100px; height: 100px;"/>
+          <img src="${monAn.hinhAnh}" style="width: 100px; height: 100px;" alt="món ăn"/>
       </td>
       <td>
           <button class="btn btn-danger" onclick="themMon('${monAn.maMonAn}')">+</button>
@@ -191,10 +193,10 @@ function xoaMon (maMonAn) {
   
 }
 
-//  xuất các món đặt ra bill
+//  xuất các món được chọn ra bill
 
 function renderBillTable(arrThucDon) {
-  var content = "";
+  var content = '';
   var trBill = '';
   for (var index = 0; index < arrThucDon.length; index++) {
     var monAn = arrThucDon[index];
