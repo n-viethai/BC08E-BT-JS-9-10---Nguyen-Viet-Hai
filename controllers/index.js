@@ -66,9 +66,10 @@ function xoaMonAn(maMonAn) {
   renderTableMonAn(arrMonAn);
 }
 
-// -------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 
 //  bài tập 2
+
 
 var arrMenu = [
   {
@@ -237,7 +238,7 @@ function tongTienBill (arrMenu) {
   var sum = 0;
   for(var index = 0; index < arrMenu.length; index++){
     var monAn = arrMenu[index];
-    sum += monAn.soLuong*monAn.giaTien; 
+    sum += monAn.soLuong*monAn.giaTien;
   }
   return sum;
 }
