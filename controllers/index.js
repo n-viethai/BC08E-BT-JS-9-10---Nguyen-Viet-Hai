@@ -70,59 +70,16 @@ function xoaMonAn(maMonAn) {
 
 //  bài tập 2
 
+var arrMenu = [];
+var monAn$1 = new Menu('1','Cua thịt khủng','1250',"./assets/img/mon1.jpeg",'0');
+var monAn$2 = new Menu('2','Cua thịt cỡ nhỏ','350',"./assets/img/mon2.jpeg",'0');
+var monAn$3 = new Menu('3','Combo cua-vẹm-tôm','610',"./assets/img/mon3.jpeg",'0');
+var monAn$4 = new Menu('4','Cua gạch','950',"./assets/img/mon4.jpeg",'0');
+var monAn$5 = new Menu('5','King Crab','2950',"./assets/img/mon5.jpeg",'0');
 
-var arrMenu = [
-  {
-    maMonAn: "1",
-    tenMonAn: "Cua thịt khủng",
-    soLuong: "0",
-    giaTien: "1250",
-    tongTien: function () {
-      return this.soLuong * this.giaTien;
-    },
-    hinhAnh: "./assets/img/mon1.jpeg",
-  },
-  {
-    maMonAn: "2",
-    tenMonAn: "Cua thịt cỡ nhỏ",
-    soLuong: "0",
-    giaTien: "350",
-    tongTien: function () {
-      return this.soLuong * this.giaTien;
-    },
-    hinhAnh: "./assets/img/mon2.jpeg",
-  },
-  {
-    maMonAn: "3",
-    tenMonAn: "Combo cua-vẹm-tôm",
-    soLuong: "0",
-    giaTien: "610",
-    tongTien : function () {
-      return this.soLuong * this.giaTien;
-    },
-    hinhAnh: "./assets/img/mon3.jpeg",
-  },
-  {
-    maMonAn: "4",
-    tenMonAn: "Cua gạch",
-    soLuong: "0",
-    giaTien: "950",
-    tongTien : function () {
-      return this.soLuong * this.giaTien;
-    },
-    hinhAnh: "./assets/img/mon4.jpeg",
-  },
-  {
-    maMonAn: "5",
-    tenMonAn: "King crab",
-    soLuong: "0",
-    giaTien: "2950",
-    tongTien : function () {
-      return this.soLuong * this.giaTien;
-    },
-    hinhAnh: "./assets/img/mon5.jpeg",
-  },
-];
+arrMenu.push(monAn$1,monAn$2,monAn$3,monAn$4,monAn$5);
+
+console.log(arrMenu);
 
 renderMenuTable(arrMenu);
 
@@ -175,7 +132,6 @@ function giamMon(num) {
       // monAn.soLuong = String(monAn.soLuong);
     }
   }
-
   renderBillTable(arrMenu);
 }
 
